@@ -1,6 +1,6 @@
 <template>
   <div class="conterner">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    
     <TestApiSms /> 
   </div>
  

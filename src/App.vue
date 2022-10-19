@@ -1,5 +1,7 @@
 <template>
   <div class="conterner">
+    <Nav></Nav>
+    <router-view />
    <TestApiSms />
     <PictureOfTheDays />
   </div>
@@ -12,11 +14,13 @@
 
 import TestApiSms from './components/test-api-sms.vue';
 import PictureOfTheDays from './components/picture-of-the-days.vue';
+import Nav from './components/nav.vue';
 export default {
   name: 'App',
   components: {
     TestApiSms,
-    PictureOfTheDays
+    PictureOfTheDays,
+    Nav
 }
 }
 </script>

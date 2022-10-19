@@ -1,6 +1,7 @@
 <template>
   <div class="conterner">
     <h2>4 images aleatoire</h2>
+    <div class="allCards">
     <div v-for="card in cards"
       v-bind:key="card.id"
        class="pisctureOfTheDay">
@@ -10,7 +11,7 @@
     <p>{{card.explanation}}</p>
 
     </div>
-     
+   </div>  
   </div>
 </template>
 
@@ -48,5 +49,16 @@ export default {
 <style>
 .pisctureOfTheDay {
     margin-bottom: 30px;
+    border: solid 1px black;
+    width: 350px;
+    padding: 15px;
+
+}
+.allCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
 }
 </style>
